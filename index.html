@@ -903,5 +903,42 @@ opacity: 0.7;
   });
 </script>
 
+<style>
+/* FINAL INPUT FIX - overrides everything */
+.field input[type="text"],
+.field input[type="tel"], 
+.field input[type="number"],
+.field select,
+.field textarea,
+#nom, #prenom, #tel, #adresse, #facture, #occupants, #rappel, #pdl, #pce, #prix-kw-elec, #prix-kw-gaz {
+  display: block !important;
+  width: 100% !important;
+  min-height: 56px !important;
+  padding: 16px 18px !important;
+  background: rgba(245, 41, 138, 0.06) !important;
+  border: 2px solid rgba(245, 41, 138, 0.35) !important;
+  border-radius: 14px !important;
+  -webkit-border-radius: 14px !important;
+  color: #f5e8f0 !important;
+  -webkit-text-fill-color: #f5e8f0 !important;
+  font-size: 1rem !important;
+  font-family: 'Outfit', sans-serif !important;
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  box-sizing: border-box !important;
+  outline: none !important;
+  box-shadow: 0 0 0 0px rgba(245,41,138,0) !important;
+  transition: border-color 0.2s, box-shadow 0.2s !important;
+}
+
+#nom:focus, #prenom:focus, #tel:focus, #adresse:focus, 
+#facture:focus, #occupants:focus, #rappel:focus,
+#pdl:focus, #pce:focus, #prix-kw-elec:focus, #prix-kw-gaz:focus {
+  border-color: #f5298a !important;
+  background: rgba(245, 41, 138, 0.1) !important;
+  box-shadow: 0 0 0 4px rgba(245,41,138,0.18) !important;
+}
+</style>
+
 </body>
 </html>
