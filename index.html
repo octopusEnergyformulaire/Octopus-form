@@ -24,7 +24,35 @@
   .footer-note { color: #9e7a8e !important; }
   .header-tagline { color: #9e7a8e !important; }
   select option { background-color: #1a1a24 !important; color: #f5e8f0 !important; }
+
+/* ===== SAFARI INPUT FIX ===== */
+input[type=“text”],
+input[type=“tel”],
+input[type=“number”],
+textarea,
+select {
+-webkit-appearance: none !important;
+-moz-appearance: none !important;
+appearance: none !important;
+background-color: rgba(255,255,255,0.07) !important;
+border: 1.5px solid rgba(245,41,138,0.3) !important;
+border-radius: 14px !important;
+-webkit-border-radius: 14px !important;
+color: #f5e8f0 !important;
+-webkit-text-fill-color: #f5e8f0 !important;
+font-size: 1rem !important;
+padding: 15px 18px !important;
+width: 100% !important;
+min-height: 54px !important;
+box-sizing: border-box !important;
+display: block !important;
+outline: none !important;
+box-shadow: none !important;
+-webkit-box-shadow: none !important;
+font-family: ‘Outfit’, sans-serif !important;
+}
 </style>
+
 <title>Tester le prix de vos factures d'énergies — Octopus Energy</title>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
